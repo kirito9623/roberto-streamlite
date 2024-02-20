@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Título de la aplicación
-st.title("CALCULADORA DE MATERIALES Y COSTOS PARA DRYWALL")
+st.title("MATERIALES Y COSTOS PARA DRYWALL")
 st.subheader("by Roberto Gonzalez")
 
 # Cantidad de metros cuadrados

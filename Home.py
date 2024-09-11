@@ -4,134 +4,131 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-
-
 st.title("Roberto Gonzalez Carranza")
 
 col1, col2 = st.columns([2, 1])
 
-col1.subheader("Developer")
-col1.image("./images/aaa.png", caption="This is me!", use_column_width=None)
+col1.subheader("Analista de datos Trainee")
+col1.image("./images/aaa.png", caption="¡Este soy yo!", use_column_width=None)
 
-col2.subheader("Contact")
-col2.write( """
+col2.subheader("Contacto")
+col2.write("""
     * Trujillo, Perú (GMT-5)
     * (+51) 948907318
     * https://github.com/kirito9623
     * https://www.linkedin.com/in/roberto-gonzalez-developer/
     """)
 
-
-
-
-st.subheader("About me")
+st.subheader("Acerca de mí")
 st.markdown(
-    """I am a technology lover, with a passion for using artificial intelligence, i use
-    the system thinking and metalearning to achieve my goals.
-    I am always looking for new challenges and opportunities to learn and grow.
-    I am passionate about web development, psychology, technology, personal growth and weigth lifting.
-    My purpose to help other for help me, and i think the technology is the mean to make a just and free world.
+    """Soy un apasionado de los datos y la inteligencia artificial, siempre buscando maneras de utilizar estas herramientas para resolver problemas y generar valor.
+
+Estoy en constante búsqueda de nuevas oportunidades para aprender y crecer, explorando cómo la tecnología puede mejorar tanto la vida personal como el mundo profesional. Además, disfruto del crecimiento personal y del levantamiento de pesas, actividades que complementan mi mentalidad de disciplina y resiliencia, esenciales para enfrentar cualquier reto.
+
+Mi propósito es claro: ayudar a otros y colaborar en proyectos que impulsen la innovación tecnológica y promuevan un futuro más justo y equitativo. Estoy abierto a nuevas oportunidades donde pueda aplicar mis habilidades y seguir contribuyendo a proyectos innovadores y de impacto.
     """)
 
+st.subheader("Tecnologías")
 
-st.subheader("Technologies")
-
-#horizontal menu
+# Menú desplegable horizontal
 def backend():
-   
-   df = pd.DataFrame({
-     'Technology': ["Linux", "PostgreSQL", "Wordpress", "AWS"],
-     'Academy': ["Linux Fundation", "University of Michigan", "Self taught", "AWS"],
-     })
-   st.write(df)
-   
+    df = pd.DataFrame({
+        'Tecnología': ["Linux", "PostgreSQL", "Wordpress", "AWS"],
+        'Academia': ["Linux Fundation", "University of Michigan", "Autodidacta", "AWS"],
+    })
+    st.write(df)
 
 def frontend():
     df = pd.DataFrame({
-     'Technology': ["HTML", "CSS", "Sass", "Bootstrap"],
-     'Academy': ["TECSUP", "TECSUP", "TECSUP", "TECSUP"],
-     })
+        'Tecnología': ["HTML", "CSS", "Sass", "Bootstrap"],
+        'Academia': ["TECSUP", "TECSUP", "TECSUP", "TECSUP"],
+    })
     st.write(df)
 
 def languages():
-     df = pd.DataFrame({
-     'Language': ["Python", "Go"],
-     'Academy': ["Self Taught", "Kodekloud.com"],
-     })
-     st.write(df)
+    df = pd.DataFrame({
+        'Lenguaje': ["Python", "Go"],
+        'Academia': ["Autodidacta", "Kodekloud.com"],
+    })
+    st.write(df)
 
 def others(): 
-     df = pd.DataFrame({
-     'Language': ["Git", "Docker", "Technical Support","Civil Engineering"],
-     'Academy': ["Kodekloud.com", "Kodekloud.com", "Google", "UPAO(Peru))"],
-     })
-     st.write(df)
+    df = pd.DataFrame({
+        'Tecnología': ["Git", "Docker", "Soporte Técnico", "Ingeniería Civil"],
+        'Academia': ["Kodekloud.com", "Kodekloud.com", "Google", "UPAO(Perú))"],
+    })
+    st.write(df)
 
-
-selected2 = option_menu(None, ["Backend", "FrontEnd", "Languages", 'Other'], 
+selected2 = option_menu(None, ["Backend", "Frontend", "Lenguajes", 'Otros'], 
     icons=['database', 'window-fullscreen', "code-square", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal")
 
 if selected2 == "Backend":
     backend()
-elif selected2 == "FrontEnd":
+elif selected2 == "Frontend":
     frontend()
-elif selected2 == "Languages":
+elif selected2 == "Lenguajes":
     languages()
-elif selected2 == "Other":
+elif selected2 == "Otros":
     others()
 
-##work experience
+# Experiencia laboral
+st.subheader("Experiencia Laboral")
 
-st.subheader("Work Experience")
+with st.expander('Consultor Tecnológico | Freelance'):
+    st.write("""
+    * Consultor Tecnológico: Mayo 2024 - Presente
+    * Empresas: Covaro SAC | AC arquitectos
+        * Marketing digital: Generación de 500 potenciales clientes mediante campañas de Meta Ads en Facebook.
+        * Desarrollo web: HTML, CSS, Wordpress, Elementor.
+        * Inteligencia artificial: Gestión y desarrollo de GPT especializado en normas técnicas y legales peruanas para revisores de Habilitaciones Urbanas y Edificaciones.
+    * Enlace: https://covarosac.com
+    """)
 
-with st.expander('Professional reinvention - Work In Progress'):
-  st.write("""
-    * Professional reinvetion: July 2022 - present
-       * DATA ANALYSIS PROJECT: 
-       *Title: Portfolio
-       *Technologies: Python,Streamlite,Linux
-       *Link : https://robertogonzalez.streamlit.app/ --- WORK IN PROGRESS""")
+with st.expander('Reinvención Profesional'):
+    st.write("""
+    * Reinvención Profesional: Julio 2022 - presente
+        * PROYECTO DE ANÁLISIS DE DATOS: 
+        * Título: Portafolio
+        * Tecnologías: Python, Streamlit, Linux
+        * Enlace: https://robertogonzalez.streamlit.app/ --- EN PROGRESO
+    """)
 
-with st.expander('Civil Engineering Entrepreneur'):
-  st.write("""
-    * GLOBAL INGENIEROS - Part time: January 2016 - present
-    * Management of all stages of building safety consulting, being the main client the transnational chain CENCOSUD for Metro, Wong, Paris stores in different cities of Peru.
-www.globalingenieros.com""")
+with st.expander('Emprendimiento en Ingeniería Civil'):
+    st.write("""
+    * GLOBAL INGENIEROS - Medio tiempo: Enero 2016 - presente
+    * Gestión de todas las etapas de consultoría de seguridad en edificaciones, siendo el cliente principal la cadena transnacional CENCOSUD para Metro, Wong, tiendas Paris en diferentes ciudades de Perú.
+    www.globalingenieros.com
+    """)
 
-with st.expander("Junior Developer (Wordpress,CSS,Html)"):
-  st.write("""
-    * AC ARQUITECTOS - Part time: January 2022 - March 2023
-        * Improvement of the webpage, create forms to filter clients.
-        * Improvement of the Front end, using plugins and editing the CSS.
-        * Initiation of database in Google Earth.
-        * Initiation of Customer tracking using Monday.
-        * Creation of Advertising Campaigns with Google ADS.
-        * Initiation of use LinkedIn Sales Navigator, 60% more business opportunities.""")
+with st.expander("Desarrollador Junior (Wordpress, CSS, HTML)"):
+    st.write("""
+    * AC ARQUITECTOS - Medio tiempo: Enero 2022 - Marzo 2023
+        * Mejora de la página web, creación de formularios para filtrar clientes.
+        * Mejora del Frontend, utilizando plugins y editando CSS.
+        * Inicio de base de datos en Google Earth.
+        * Implementación de seguimiento de clientes usando Monday.
+        * Creación de campañas publicitarias con Google ADS.
+        * Uso de LinkedIn Sales Navigator, 60% más oportunidades de negocio.
+    """)
 
-with st.expander("Blog Company Co-founder"):
-  st.write("""
-    * Pondomedia - Part time: October 2014 - December 2015
-        * Company that developed blogs for Spanish-speaking audiences using web analysis and SEO (Search Engine Optimization). SEO (Search Engine Optimization)
-   """)
-
-
+with st.expander("Co-fundador de Empresa de Blogs"):
+    st.write("""
+    * Pondomedia - Medio tiempo: Octubre 2014 - Diciembre 2015
+        * Empresa que desarrollaba blogs para audiencias de habla hispana utilizando análisis web y SEO (Optimización en Motores de Búsqueda).
+    """)
 
 col1, col2 = st.columns([2, 1])
 
-col1.subheader("Skills")
-col1.write( """
-    * Proactive
-    * Fast learner
-    * Team worker
+col1.subheader("Habilidades")
+col1.write("""
+    * Proactivo
+    * Aprendizaje rápido
+    * Trabajo en equipo
     """)
 
-col2.subheader("Spoken Languages")
-col2.write( """
-    * Spanish: Native
-    * English: CEFR English - B2 Upper Intermediate
+col2.subheader("Idiomas Hablados")
+col2.write("""
+    * Español: Nativo
+    * Inglés: CEFR - B2 Intermedio Superior
     """)
-
-
-
-

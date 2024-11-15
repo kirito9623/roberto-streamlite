@@ -120,7 +120,6 @@ with st.expander('Emprendimiento en Ingeniería Civil'):
         logrando un cobro puntual y un ahorro promedio del 15% en costos operativos.
     """)
     
-
 col1, col2 = st.columns([2, 1])
 
 col1.subheader("Habilidades")
@@ -135,3 +134,34 @@ col2.write("""
     * Español: Nativo
     * Inglés: CEFR - B2 Intermedio Superior
     """)
+
+
+st.header("Portafolio de Proyectos")
+
+st.markdown("""
+## Descripción
+Este portafolio presenta una serie de proyectos desarrollados con **Streamlit** y **Python**, diseñados para realizar análisis de datos de manera interactiva y accesible. La aplicación permite visualizar datos en tiempo real y explorar resultados de forma intuitiva, sin necesidad de conocimientos avanzados en desarrollo web. 
+
+Los proyectos aquí mostrados ejemplifican cómo se pueden utilizar herramientas de análisis de datos en entornos accesibles y visuales para apoyar la toma de decisiones estratégicas, con la ayuda de bibliotecas y tecnologías modernas.
+
+## Tecnologías Utilizadas
+Para el desarrollo de estos proyectos se han empleado las siguientes tecnologías:
+
+- **Python**: Lenguaje de programación principal para la manipulación de datos.
+- **Streamlit**: Framework para crear aplicaciones web interactivas y visualizaciones en tiempo real.
+- **Pandas**: Biblioteca para manipulación y análisis de datos.
+- **Matplotlib**: Biblioteca para crear visualizaciones de datos.
+- **Excel**: Fuente de datos para algunos proyectos.
+- **Google Drive**: Almacenamiento y fuente de datos externos.
+
+## Objetivo y Logros
+Este portafolio permite explorar cómo:
+
+- **Crear aplicaciones web dinámicas** para análisis de datos utilizando Streamlit.
+- **Generar reportes automáticos** de análisis de datos de manera continua, facilitando la actualización y revisión de la información.
+- **Realizar análisis exploratorio** de datos utilizando Python y bibliotecas como pandas y matplotlib para extraer tendencias y patrones significativos.
+- **Presentar visualizaciones y comparaciones** de datos directamente en la web, lo que permite a los usuarios interactuar y entender los datos de manera visual y fácil.
+
+""")
+
+

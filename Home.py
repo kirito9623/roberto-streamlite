@@ -8,7 +8,7 @@ st.title("Roberto Gonzalez Carranza")
 
 col1, col2 = st.columns([2, 1])
 
-col1.subheader("Analista de datos Trainee")
+col1.subheader("Analista de datos ")
 col1.image("./images/aaa.png", caption="¡Este soy yo!", use_column_width=None)
 
 col2.subheader("Contacto")
@@ -21,11 +21,16 @@ col2.write("""
 
 st.subheader("Acerca de mí")
 st.markdown(
-    """Soy un apasionado de los datos y la inteligencia artificial, siempre buscando maneras de utilizar estas herramientas para resolver problemas y generar valor.
-
-Estoy en constante búsqueda de nuevas oportunidades para aprender y crecer, explorando cómo la tecnología puede mejorar tanto la vida personal como el mundo profesional. Además, disfruto del crecimiento personal y del levantamiento de pesas, actividades que complementan mi mentalidad de disciplina y resiliencia, esenciales para enfrentar cualquier reto.
-
-Mi propósito es claro: ayudar a otros y colaborar en proyectos que impulsen la innovación tecnológica y promuevan un futuro más justo y equitativo. Estoy abierto a nuevas oportunidades donde pueda aplicar mis habilidades y seguir contribuyendo a proyectos innovadores y de impacto.
+    """Ingeniero con 7 años de experiencia profesional, con una sólida base en gestión de proyectos y análisis de
+datos. Cuento con 6 años de experiencia en gestión de proyectos, trabajando en consultoría en diferentes
+ciudades del Perú, para una empresa transnacional, esta experiencia me ha permitido desarrollar
+habilidades clave como toma de decisiones bajo presión y la capacidad de resolver problemas.
+Durante el último año, me he especializado en análisis de datos, adquiriendo experiencia Python, SQL, SQL
+Server Transact-SQL, Power BI y Excel para extraer, limpiar y analizar datos a gran escala, generando
+insights estratégicos y visualizaciones de alto impacto, asimismo tengo experiencia en la creación de
+dashboards para campañas de marketing.
+Soy creativo, dinámico y orientado a resultados, con capacidad para trabajar en equipo. Actualmente, busco
+desarrollarme como analista de datos, aplicando mis conocimie
     """)
 
 st.subheader("Tecnologías")
@@ -33,8 +38,8 @@ st.subheader("Tecnologías")
 # Menú desplegable horizontal
 def backend():
     df = pd.DataFrame({
-        'Tecnología': ["Linux", "PostgreSQL", "Wordpress", "AWS"],
-        'Academia': ["Linux Fundation", "University of Michigan", "Autodidacta", "AWS"],
+        'Tecnología': ["Linux", "SQL" , 'SQL Server Transact-SQL', "PostgreSQL", "Wordpress", "AWS"],
+        'Academia': ["Linux Fundation", "DSRP","DSRP","University of Michigan", "Autodidacta", "AWS"],
     })
     st.write(df)
 
@@ -48,7 +53,7 @@ def frontend():
 def languages():
     df = pd.DataFrame({
         'Lenguaje': ["Python", "Go"],
-        'Academia': ["Autodidacta", "Kodekloud.com"],
+        'Academia': ["DSRP", "Kodekloud.com"],
     })
     st.write(df)
 
@@ -75,48 +80,46 @@ elif selected2 == "Otros":
 # Experiencia laboral
 st.subheader("Experiencia Laboral")
 
-with st.expander('Consultor Tecnológico | Freelance'):
+with st.expander('Analista de Datos| Freelance'):
     st.write("""
-    * Consultor Tecnológico: Mayo 2024 - Presente
+    * Analista de Datos: Mayo 2024 - Presente
     * Empresas: Covaro SAC | AC arquitectos
-        * Marketing digital: Generación de 500 potenciales clientes mediante campañas de Meta Ads en Facebook.
-        * Desarrollo web: HTML, CSS, Wordpress, Elementor.
-        * Inteligencia artificial: Gestión y desarrollo de GPT especializado en normas técnicas y legales peruanas para revisores de Habilitaciones Urbanas y Edificaciones.
-    * Enlace: https://covarosac.com
+        * Generé 3 dashboards en Looker Studio para el control de KPIs de campañas de marketing, mejorando la
+        visibilidad del rendimiento y la toma de decisiones estratégicas.
+        * Optimicé 10 campañas de marketing digital en Facebook Ads, logrando un incremento del 20% en la tasa
+        de conversión y mejorando el retorno de inversión (ROI).
+        * Implementé un proceso de integración que extrae en tiempo real los datos de campañas de Facebook
+        Ads hacia Looker Studio, optimizando la actualización de reportes en un 80%.
+        * Aumenté en un 40% la captación de leads mediante el desarrollo de una landing page optimizada dentro
+        de un funnel de ventas, redirigiendo a grupos de WhatsApp y mejorando la interacción y el engagement.
+        * Diseñe, desarrollé y desplegué la página web:  https://covarosac.com
     """)
 
-with st.expander('Reinvención Profesional'):
-    st.write("""
-    * Reinvención Profesional: Julio 2022 - presente
-        * PROYECTO DE ANÁLISIS DE DATOS: 
-        * Título: Portafolio
-        * Tecnologías: Python, Streamlit, Linux
-        * Enlace: https://robertogonzalez.streamlit.app/ --- EN PROGRESO
-    """)
 
 with st.expander('Emprendimiento en Ingeniería Civil'):
     st.write("""
-    * GLOBAL INGENIEROS - Medio tiempo: Enero 2016 - presente
-    * Gestión de todas las etapas de consultoría de seguridad en edificaciones, siendo el cliente principal la cadena transnacional CENCOSUD para Metro, Wong, tiendas Paris en diferentes ciudades de Perú.
-    www.globalingenieros.com
+    * GLOBAL INGENIEROS - Medio tiempo: Enero 2016 - Abril 2024
+        * Gestioné más de 50 expedientes técnicos para renovar certificados de seguridad en edificaciones de un
+        promedio de 5,000 m² de área ocupada, cumpliendo con normativas ante diversas municipalidades en
+        Perú.
+        * Redacté 50 informes técnicos con recomendaciones específicas para mejorar la seguridad y el
+        cumplimiento normativo de las edificaciones.
+        * Desarrollé 50 presupuestos para implementar mejoras de seguridad, optimizando costos y recursos en
+        cada proyecto.
+        * Revisé y actualicé 300 planos (arquitectura, seguridad y eléctricos), alineando toda la documentación
+        con requisitos regulatorios.
+        * Participé en 50 inspecciones técnicas de edificaciones de alto riesgo, asegurando la correcta
+        implementación de normas de seguridad.
+        * Supervisé la subcontratación de 15 profesionales especializados en seguridad y construcción,
+        garantizando la calidad de las soluciones.
+        * Coordiné la colaboración de 60 personas, incluyendo 20 jefes de tienda, 20 jefes de seguridad, 20 jefes de
+        mantenimiento, arquitectos e ingenieros, facilitando el levantamiento de observaciones y la ejecución de
+        mejoras técnicas en 50 edificaciones, lo que resultó en una mejora del 70% en el cumplimiento
+        normativo.
+        * Gestioné 50 órdenes de compra y procesé 50 facturas en el sistema de proveedores de Cencosud,
+        logrando un cobro puntual y un ahorro promedio del 15% en costos operativos.
     """)
-
-with st.expander("Desarrollador Junior (Wordpress, CSS, HTML)"):
-    st.write("""
-    * AC ARQUITECTOS - Medio tiempo: Enero 2022 - Marzo 2023
-        * Mejora de la página web, creación de formularios para filtrar clientes.
-        * Mejora del Frontend, utilizando plugins y editando CSS.
-        * Inicio de base de datos en Google Earth.
-        * Implementación de seguimiento de clientes usando Monday.
-        * Creación de campañas publicitarias con Google ADS.
-        * Uso de LinkedIn Sales Navigator, 60% más oportunidades de negocio.
-    """)
-
-with st.expander("Co-fundador de Empresa de Blogs"):
-    st.write("""
-    * Pondomedia - Medio tiempo: Octubre 2014 - Diciembre 2015
-        * Empresa que desarrollaba blogs para audiencias de habla hispana utilizando análisis web y SEO (Optimización en Motores de Búsqueda).
-    """)
+    
 
 col1, col2 = st.columns([2, 1])
 
